@@ -1,0 +1,8 @@
+The non-optimal decision scenarios(NoDSs) that detected by MT-Nod can be downloaded at https://drive.google.com/file/d/1SC732dOU2Txjp3hW0c1B5KYB4oHnFL3s/view?usp=sharing.
+Due to space constraints, only a subset of NoDSs is uploaded for each source test scenario. 
+To play the record, you should install Apollo 7.0 first. Next, execute the following commands:
+In the Apollo folder: sudo bash docker/scripts/dev_start.sh
+Enter the container: sudo bash docker/scripts/dev_into.sh
+Build GPU version: ./apollo.sh build_gpu
+Start Dreamview: ./scripts/bootstrap.sh
+Command to playback Apollo records: cyber_recorder play -f xxxxxxx/recording.00000 --loop  
